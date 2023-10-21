@@ -38,11 +38,12 @@ const Signup = () => {
         },
         { withCredentials: true }
       );
+    //   console.log("Data is added to mongo");
       const { success, message } = data;
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
-          navigate("/");
+          navigate("/login");
         }, 1000);
       } else {
         handleError(message);

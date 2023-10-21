@@ -16,7 +16,7 @@ mongoose.connect(MONGO_URL, {
 .catch((err)=>console.log(err))
 
 app.use(cors({
-  origin: ["http://localhost:4000"],
+  origin: ["http://localhost:3000"],
   methods:["GET", "POST", "PUT", "DELETE"],
   credentials: true,
 }))
@@ -25,6 +25,6 @@ app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);
 });
 
+app.use(cookieParser());
 app.use(express.json());
 app.use("/", authRoute);
-app.use(cookieParser());
