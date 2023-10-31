@@ -60,8 +60,10 @@ const Signup = () => {
   };
 
   return (
+    <div className="Form">
     <div className="form_container">
       <h2>Signup Account</h2>
+      <Link to='/'> <span>Return to home -</span> </Link>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="email">Email</label>
@@ -99,6 +101,7 @@ const Signup = () => {
         </span>
       </form>
       <ToastContainer />
+    </div>
     </div>
   );
 };

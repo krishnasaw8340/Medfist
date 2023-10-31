@@ -1,0 +1,104 @@
+.welcome-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+    grid-gap: 10px; /* Adjust the gap between the columns */
+  
+    /* Optional: Set a maximum width to control responsiveness */
+    max-width: 1000px;
+    margin: 20px auto; /* Center the content horizontally */
+  
+    /* Additional styling for mobile devices (adjust as needed) */
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr; /* Single column on small screens */
+      .navbar {
+        flex-direction: column;
+      }
+      .first{
+        text-align: center;
+      }
+    
+      .nav-buttons {
+        margin-top: 10px;
+      }
+
+    }
+}
+
+   
+  .first {
+    /* Add styles for the first column here */
+  }
+  
+  .second {
+    /* Add styles for the second column here */
+  }
+  .img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  /* border: 1px solid rgb(241, 131, 168); */
+  }
+  
+  header {
+    background-color: #fff8f8;
+    padding: 10px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .nav-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  .login, .signup {
+    background-color: #e299b5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Hover animation */
+  }
+  .login:hover, .signup:hover {
+    background-color: #d169c0;
+  }
+
+  .lower-text{
+    margin-top: 30px;
+  }
+
+  .logo-name
+  {
+    color: #b8139c;
+    font-size: 35px;
+  }
+  .colored-text{
+    color: #860766;
+  }
+  p{
+    margin: 20px 0 20px 0;
+    font-size: 18px;
+    text-align: justify;
+  }
+  .btns{
+    padding-right: 20px;
+  }
+
+  .home{
+    height: 30vh;
+    width: 100%;
+  }
+
+ 

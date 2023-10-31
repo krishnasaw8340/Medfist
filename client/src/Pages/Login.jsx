@@ -58,8 +58,9 @@ const Login = () => {
   };
 
   return (
+    <div className="Form">
     <div className="form_container">
-      <h2>Login Account</h2>
+      <h2>Login Account</h2>    
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="email">Email</label>
@@ -87,6 +88,7 @@ const Login = () => {
         </span>
       </form>
       <ToastContainer />
+    </div>
     </div>
   );
 };
